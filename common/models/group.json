@@ -1,0 +1,30 @@
+{
+  "name": "Group",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ID": {
+      "type": "number",
+      "id": true,
+      "generated": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "chatUsers": {
+      "type": "hasMany",
+      "model": "ChatUser",
+      "foreignKey": "",
+      "through": "GroupUser"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

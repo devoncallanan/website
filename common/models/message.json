@@ -1,0 +1,43 @@
+{
+  "name": "Message",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ID": {
+      "type": "number",
+      "id": true,
+      "generated": true
+    },
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "timeStamp": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "chatUser": {
+      "type": "belongsTo",
+      "model": "ChatUser",
+      "foreignKey": ""
+    },
+    "group": {
+      "type": "belongsTo",
+      "model": "Group",
+      "foreignKey": ""
+    },
+    "image": {
+      "type": "hasOne",
+      "model": "Image",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

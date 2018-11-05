@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "chatdb": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "chat1",
+    "password": "chat",
+    "name": "chatdb",
+    "user": "chat",
+    "connector": "mysql"
+  }
+}

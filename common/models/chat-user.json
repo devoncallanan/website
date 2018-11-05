@@ -1,0 +1,29 @@
+{
+  "name": "ChatUser",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "groups": {
+      "type": "hasMany",
+      "model": "Group",
+      "foreignKey": "",
+      "through": "GroupUser"
+    },
+    "image": {
+      "type": "hasOne",
+      "model": "Image",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

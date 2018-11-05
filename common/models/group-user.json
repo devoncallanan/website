@@ -1,0 +1,33 @@
+{
+  "name": "GroupUser",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ID": {
+      "type": "Number",
+      "id": true,
+      "generated": true
+    },
+    "role": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "chatUser": {
+      "type": "belongsTo",
+      "model": "ChatUser",
+      "foreignKey": ""
+    },
+    "group": {
+      "type": "belongsTo",
+      "model": "Group",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
