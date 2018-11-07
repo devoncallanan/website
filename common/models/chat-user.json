@@ -14,7 +14,7 @@
   "relations": {
     "groups": {
       "type": "hasMany",
-      "model": "Group",
+      "model": "ChatGroup",
       "foreignKey": "",
       "through": "GroupUser"
     },

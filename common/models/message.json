@@ -29,7 +29,7 @@
     },
     "group": {
       "type": "belongsTo",
-      "model": "Group",
+      "model": "ChatGroup",
       "foreignKey": ""
     },
     "image": {
