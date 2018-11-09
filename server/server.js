@@ -15,6 +15,10 @@ app.start = function() {
       var explorerPath = app.get('loopback-component-explorer').mountPath;
       console.log('Browse your REST API at %s%s', baseUrl, explorerPath);
     }
+    if (process.env.NODE_ENV == "production") {
+      process.setgid('wheel');
+      process.setuid('ec2-user');
+    }
   });
 };
 
