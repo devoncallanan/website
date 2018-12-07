@@ -14,25 +14,25 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "chatdb"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "chatdb",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "chatdb",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "chatdb",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "chatdb",
     "public": false
   },
   "Message": {

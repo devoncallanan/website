@@ -2,7 +2,7 @@
 //AWS ElasticBeasnstalk production environment
 
 module.exports = {
-  db: {
+  chatdb: {
     connector: 'mysql',
     hostname: process.env.RDS_HOSTNAME,
     port: process.env.RDS_PORT,
