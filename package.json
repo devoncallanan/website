@@ -10,7 +10,8 @@
     "posttest": "npm run lint",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "buildserve": "npm run build && node ."
   },
   "dependencies": {
     "compression": "^1.0.3",
