@@ -2,8 +2,8 @@
 .DS_Store
 node_modules
 /dist
-/server/datasources.json
-/server/config.json
+/server/datasources.local.json
+/server/config.local.json
 
 # loopback
 *.csv
